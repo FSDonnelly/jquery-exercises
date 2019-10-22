@@ -1,10 +1,3 @@
-// $(document).ready(() => {
-//   let h1 = $('h1');
-//   console.log(h1);
-//   let a = $('a.blue-link');
-//   console.log(a);
-// });
-
 // Events
 
 // Mouse Events
@@ -19,13 +12,23 @@
 // Document / Window Events
 // load, resize, scroll
 
-// Form Events
-let textInp = $('input[type=text');
+// Window Events
 
-textInp.on('focus', function() {
-  $(this).addClass('focused');
+$(window).on('load', () => {
+  console.log('The page has loaded');
 });
 
-textInp.on('blur', function() {
-  $(this).removeClass('focused');
+$(window).on('resize', () => {
+  console.log(`Width: ${$(window).width()}; Height: ${$(window).height()}`);
+});
+
+$(window).on('scroll', () => {
+  console.log(`Offset top: ${$(window).scrollTop()}`);
+});
+
+$(document).ready(() => {
+  let h1 = $('h1');
+  console.log(h1);
+  let a = $('a.blue-link');
+  console.log(a);
 });
