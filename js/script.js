@@ -1,9 +1,9 @@
-$(document).ready(() => {
-  let h1 = $('h1');
-  console.log(h1);
-  let a = $('a.blue-link');
-  console.log(a);
-});
+// $(document).ready(() => {
+//   let h1 = $('h1');
+//   console.log(h1);
+//   let a = $('a.blue-link');
+//   console.log(a);
+// });
 
 // Events
 // Mouse Events
@@ -15,16 +15,22 @@ $(document).ready(() => {
 // Document / Window Events
 // load, resize, scroll
 
-// Mouse Events
+// Keyboard Events
+{
+  /* <input type="text"/> */
+}
+let inp = $('.press');
+let inp2 = $('.keyDown');
+let inp3 = $('.keyUp');
 
-// <button class='clickBtn'>Click</button>;
-let button1 = $('.clickBtn');
-let button2 = $('.dblclickBtn');
-
-button1.click(() => {
-  alert('You have single-clicked!');
+inp.on('keypress', e => {
+  console.log(`Keypress is typing: ${e.target.value}`);
 });
 
-button2.on('dblclick', () => {
-  alert('You have double-clicked!');
+inp2.on('keydown', e => {
+  console.log(`Keydown is typing: ${e.target.value}`);
+});
+
+inp3.on('keyup', e => {
+  console.log(`Keyup is typing: ${e.target.value}`);
 });
