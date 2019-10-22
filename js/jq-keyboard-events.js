@@ -1,24 +1,10 @@
-// $(document).ready(() => {
-//   let h1 = $('h1');
-//   console.log(h1);
-//   let a = $('a.blue-link');
-//   console.log(a);
-// });
-
-// Events
-// Mouse Events
-// click, dblclick, mouseover
-// Keyboard Events
-// keypress, keyup, keydown
-// Form Events
-// submit, change, focus
-// Document / Window Events
-// load, resize, scroll
-
 // Keyboard Events
 {
-  /* <input type="text"/> */
+  /* <input class="press" type="text" />
+<input class="keyDown" type="text" />
+<input class="keyUp" type="text" /> */
 }
+
 let inp = $('.press');
 let inp2 = $('.keyDown');
 let inp3 = $('.keyUp');
