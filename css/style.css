@@ -9,3 +9,9 @@ input {
   box-shadow: 0 0 10px #d3d3d3;
   outline: none;
 }
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
