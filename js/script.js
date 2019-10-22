@@ -6,33 +6,26 @@
 // });
 
 // Events
+
 // Mouse Events
 // click, dblclick, mouseover
+
 // Keyboard Events
 // keypress, keyup, keydown
+
 // Form Events
 // submit, change, focus
+
 // Document / Window Events
 // load, resize, scroll
 
-// Keyboard Events
-{
-  /* <input type="text"/> */
-}
-let inp = $('.press');
-let inp2 = $('.keyDown');
-let inp3 = $('.keyUp');
+// Form Events
+let textInp = $('input[type=text');
 
-inp.on('keypress', e => {
-  if (e.which === 13 && e.shiftKey) {
-    console.log(`Keypress typed: ${e.target.value}`);
-  }
+textInp.on('focus', function() {
+  $(this).addClass('focused');
 });
 
-inp2.on('keydown', e => {
-  console.log(`Keydown is typing: ${e.target.value}`);
-});
-
-inp3.on('keyup', e => {
-  console.log(`Keyup is typing: ${e.target.value}`);
+textInp.on('blur', function() {
+  $(this).removeClass('focused');
 });
