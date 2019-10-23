@@ -1,15 +1,13 @@
-// Attr
+// addClass() removeClass()
+let btn = $('.btn1');
+let btn2 = $('.btn2');
 
-let btn = $('button');
+let block = $('.block');
 
 btn.on('click', () => {
-  // $('.img-1').attr('src', 'img/2.jpg');
+  block.addClass('red-text');
+});
 
-  // let src1 = $('.img-1').attr('src');
-  // $('.img-2').attr('src', src1);
-  let b1 = $('.block-1');
-  b1.attr('class', 'circle');
-
-  let b2 = $('.block-2');
-  b2.attr('class', b1.attr('class'));
+btn2.on('click', () => {
+  block.removeClass('red-text');
 });
