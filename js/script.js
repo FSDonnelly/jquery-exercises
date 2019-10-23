@@ -1,11 +1,15 @@
 // Attr
 
 let btn = $('button');
-let img = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg'];
 
 btn.on('click', () => {
-  $('.img-1').attr('src', 'img/2.jpg');
+  // $('.img-1').attr('src', 'img/2.jpg');
 
-  let src1 = $('.img-1').attr('src');
-  $('.img-2').attr('src', src1);
+  // let src1 = $('.img-1').attr('src');
+  // $('.img-2').attr('src', src1);
+  let b1 = $('.block-1');
+  b1.attr('class', 'circle');
+
+  let b2 = $('.block-2');
+  b2.attr('class', b1.attr('class'));
 });

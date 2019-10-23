@@ -12,3 +12,12 @@
 /* img {
   width: 30%;
 } */
+div {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+
+.circle {
+  border-radius: 50%;
+}
