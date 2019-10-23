@@ -2,6 +2,7 @@
 let hideBtn = $('.hideBlock');
 let showBtn = $('.showBlock');
 let toggle = $('.toggle');
+let change = $('.change');
 let block = $('#block');
 let block2 = $('#block-2');
 
@@ -46,7 +47,20 @@ let block2 = $('#block-2');
 //   block2.toggle();
 // });
 
-toggle.on('click', () => {
-  block.fadeToggle();
-  block2.slideToggle();
+// toggle.on('click', () => {
+//   block.fadeToggle();
+//   block2.slideToggle();
+// });
+
+change.on('click', () => {
+  block.animate(
+    {
+      width: '400px',
+      height: '400px',
+      marginTop: '25%',
+      marginLeft: '25%',
+      opacity: '.5'
+    },
+    1000
+  );
 });
