@@ -1,18 +1,23 @@
-// addClass() removeClass() toggleClass()
-let btn = $('.btn1');
-let btn2 = $('.btn2');
-let btn3 = $('.btn3');
+// Add element to a list
+// ----JQuery Chaining----//
+$('<li></li>')
+  .addClass('red')
+  .text('Item 4')
+  .appendTo($('ul'));
 
-let block = $('.block');
+// ----JQuery----//
+// let el = $('<li></li>');
+// let list = $('ul');
 
-btn.on('click', () => {
-  block.addClass('red-back');
-});
+// el.addClass('red');
+// el.text('Item 4');
 
-btn2.on('click', () => {
-  block.removeClass('red-back');
-});
+// list.append(el);
 
-btn3.on('click', () => {
-  block.toggleClass('red-back');
-});
+// ----Javascript----//
+// let el = document.createElement('li');
+// let list = document.querySelector('ul');
+
+// el.className = 'red';
+// el.textContent = 'Item 4';
+// list.appendChild(el);
